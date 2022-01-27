@@ -1,7 +1,7 @@
-# cs2600systemsProgramming
-# intro
+# cs2600systemsProgramming Spring 2022
+# intro  
 * This is the main repo for my spring semester 2022 systems programming class. This class with have two parts the C language and Arduino
-# Spring 2022
+
 # CS 2600
 
 * Course Description  
