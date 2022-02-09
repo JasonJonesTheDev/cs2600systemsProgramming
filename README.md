@@ -2,8 +2,8 @@
 
 # Contents
 
-- [Course Description](#Course Description)
-- [Course Objectives](#Course Objectives)
+- [Course Description](#Course-Description)
+- [Course Objectives](#Course-Objectives)
 - [References](#References)
 <!-- - [Code of conduct](#code-of-conduct)
 - [Team](#team) -->
@@ -12,7 +12,7 @@
 Fundamentals of C programming 
 and Unix environment. File management, communications and process control. Regular expressions. Unix system calls, concurrent, and socket programming. Learn how to program the Arduino for real-world usage, such as to control lights, motors and motion detection sensors. This course assumes the use of real hardware components in a live lab environment (not software-simulated hardware).   
 
-# Course Objectives
+# Course Objectives  
 Upon the completion of this course, the student shall acquire the following knowledge and skills:
 * Introduction to the basic concepts of programming in C and its use for problem solving.
 * Appreciate the various utilities used for file management, process control, communication and program development
