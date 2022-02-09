@@ -1,12 +1,17 @@
-# CS 2600 Systems Programming Spring 2022
+# CS 2600 Systems Programming Spring 2022 California State Polytechnic University, Pomona  
+
 
 # Contents
 
+- [Course Instructor](#Course-Instructor)
 - [Course Description](#Course-Description)
 - [Course Objectives](#Course-Objectives)
-- [References](#References)
+- [References](#References)  
 <!-- - [Code of conduct](#code-of-conduct)
 - [Team](#team) -->
+# Course Instructor  
+## Nima Davarpanah  
+* [Cal Poly Pomona Email](ndavarpanah@cpp.edu)  
 
 # Course Description  
 Fundamentals of C programming 
