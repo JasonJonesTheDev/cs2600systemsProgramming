@@ -26,7 +26,7 @@ Upon the completion of this course, the student shall acquire the following know
 * Arduino ESP32 kit 
  https://tinyurl.com/yvk8kc4f
 
-* References  
+# References  
  * “The C Programming Language”
  Brian Kernighan and Dennis Ritchie  
  * “C in a Nutshell”
