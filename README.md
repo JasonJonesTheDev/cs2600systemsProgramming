@@ -10,7 +10,7 @@
 <!-- - [Code of conduct](#code-of-conduct)
 - [Team](#team) -->
 # Course Instructor  
-## Nima Davarpanah  
+**Nima Davarpanah**  
 * [ndavarpanah@cpp.edu](ndavarpanah@cpp.edu)  
 
 # Course Description  
