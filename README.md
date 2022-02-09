@@ -44,3 +44,6 @@ Upon the completion of this course, the student shall acquire the following know
  K. N. King  
  * “The Linux Command Line”
  William Shotts  
+
+
+<!-- Father_ComputerScienceStudent CalStatePolytechnicUniversityPomona NASA_L'SPACE(MCA)_NCAS2020 ΦΘΚ_KelloggHonorsCollege LiquidationAuditorCostcoWholesale -->
