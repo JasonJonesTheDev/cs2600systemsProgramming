@@ -11,7 +11,7 @@
 - [Team](#team) -->
 # Course Instructor  
 ## Nima Davarpanah  
-* [Cal Poly Pomona Email](ndavarpanah@cpp.edu)  
+* [ndavarpanah@cpp.edu](ndavarpanah@cpp.edu)  
 
 # Course Description  
 Fundamentals of C programming 
