@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    printf("Hello, my name is Jason Jones and I am working on hw1");
+    printf("Hello, our names are Jason Jones and Neil Patrick Reyes and we are working on hw5 together");
 }
  
  
