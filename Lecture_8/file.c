@@ -73,7 +73,7 @@ Start from beginning but writing can only be appended.
 
 int main() { 
 
-   FILE *fp;        //pointer to a file type 
+   //FILE *fp;        //pointer to a file type 
 
 
 
