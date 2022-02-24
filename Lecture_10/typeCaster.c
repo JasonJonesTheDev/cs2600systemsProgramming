@@ -9,6 +9,36 @@
 // An example of implicit conversion THIS IS AUTOMATICALLY CONVERTED BY COMPILER
 
 #include <stdio.h>
+#include <time.h>
+
+// #define type_name(expr) \ 
+//     (_Generic((expr), \ 
+//               char                              \
+//               : "char", unsigned char           \
+//               : "unsigned char", signed char    \
+//               : "signed char", \ 
+//               short                             \
+//               : "short", unsigned short         \
+//               : "unsigned short", \ 
+//               int                               \
+//               : "int", unsigned int             \
+//               : "unsigned int", \ 
+//               long                              \
+//               : "long", unsigned long           \
+//               : "unsigned long", \ 
+//               long long                         \
+//               : "long long", unsigned long long \
+//               : "unsigned long long", \ 
+//               float                             \
+//               : "float", \ 
+//               double                            \
+//               : "double", \ 
+//               long double                       \
+//               : "long double", \ 
+//               void *                            \
+//               : "void*", \ 
+//               default                           \
+//               : "?"))
 
 int main()
 
@@ -18,17 +48,21 @@ int main()
 
     char y = 'a'; // character c
 
-    // y implicitly converted to int. ASCII
+    int copy = 0;
 
-    // value of 'a' is 97
+        // y implicitly converted to int. ASCII
 
-    x = x + y; // adding two different types compiler will typecast with model above char->int
+        // value of 'a' is 97
+
+        x = x + y; // adding two different types compiler will typecast with model above char->int
 
     // x is implicitly converted to float
 
     float z = x + 1.0;
 
-    printf("x = %d, z = %f", x, z);
+    printf("x = %d, z = %f ", x, z);
+    // typeof(x) copy = x;
+    printf("Type of x: %d", copy);
 
     return 0;
 }
