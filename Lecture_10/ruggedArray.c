@@ -45,11 +45,11 @@ int main(void)
 
     // printing day_table
 
-    for (int row = 0; row < sizeof(day_table) / sizeof(int); row++)
+    for (int charPerRow = 0; charPerRow < sizeof(day_table) / sizeof(int); charPerRow++)
 
     {
 
-        printf("%s\n", day_table[row]);
+        printf("%s\n", day_table[charPerRow]);
     }
 
     // Printing daysOfWeek
