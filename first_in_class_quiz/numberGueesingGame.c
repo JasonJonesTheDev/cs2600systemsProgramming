@@ -79,6 +79,15 @@ int main()
     int computerNum = 0;
     int playerNum = 0;
 
+    // file inpout
+    FILE *fptr;
+    fptr = fopen("save_user_max_number", "w");
+    if (fptr == NULL)
+    {
+        printf("Error!");
+        exit(1);
+    }
+
     // array initializations.
     Array winLoss;
     initArray(&winLoss, 5);
@@ -188,6 +197,7 @@ int main()
             for (int i = 0; i < gameCount; i++)
             {
                 printf("Game#: %d \nResult: %c\nNumber of Guesses: %d \n\n", i + 1, winLoss.array[i], numberOfGuessesPerGame.array[i]);
+                fprintf(fptr, "Game#: %d \nResult: %c\nNumber of Guesses: %d \n\n", i + 1, winLoss.array[i], numberOfGuessesPerGame.array[i]);
             }
             freeArray(&winLoss);
             freeArray(&numberOfGuessesPerGame);
@@ -197,5 +207,6 @@ int main()
             break;
         }
     }
+    fclose(fptr);
     return 0;
 }
