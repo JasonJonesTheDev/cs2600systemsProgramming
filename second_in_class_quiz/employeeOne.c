@@ -31,6 +31,8 @@ PtrToEmployee searchEmployeeByName(PtrToConstEmployee ptr, int tableSize, char *
     return NULL;
 }
 
+//--------------------------------------------1(a)-----------------------------------------------------
+ // searchEEbySalary found
 PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int tableSize, double targetSalary)
 {
 
@@ -44,7 +46,7 @@ PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int tableSize, doub
 
     return NULL;
 }
-
+// searchEEbyPhone
 PtrToEmployee searchEmployeeByPhone(PtrToConstEmployee ptr, int tableSize, char *targePhone)
 {
 
