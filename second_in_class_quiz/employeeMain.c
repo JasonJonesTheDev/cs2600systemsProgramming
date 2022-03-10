@@ -27,7 +27,7 @@ int main(void)
 
     PtrToEmployee matchPtr; // Declaration
 
-    //--------------------------------------------1(a)-----------------------------------------------------
+    //--------------------------------------------1(a)&(b)--------------------------------------------------
     // searchEEbyPhone found
     matchPtr = searchEmployeeByPhone(EmployeeTable, EmployeeTableEntries, "909-555-2134");
 
