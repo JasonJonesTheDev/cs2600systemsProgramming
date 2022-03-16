@@ -23,4 +23,3 @@ int main()
  printf("%d\n",stat); 
  return 0; 
 } 
-
