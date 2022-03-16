@@ -2,19 +2,15 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
-
 #define row 3
 #define col 3
-
 bool loShuTest(int twoDarr[][col]);
 void printLoShu(int twoDarr[][col]);
-
 int main(void)
 {
     int correctLoShu[row][col] = {{4, 9, 2}, {3, 5, 7}, {8, 1, 6}};
     int inCorrectLoShu[row][col] = {{9, 4, 2}, {3, 5, 7}, {8, 1, 6}};
     int dupCorrectLoShu[row][col] = {{9, 9, 2}, {9, 6, 7}, {8, 1, 6}};
-
     // printf("%d", loShuTest(correctLoShu));
     // loShuTest(correctLoShu);
     // loShuTest(inCorrectLoShu);
@@ -22,7 +18,6 @@ int main(void)
     int randLoShu[row][col];
     int count = 0; 
     srand(time(NULL));
-
     while (true)
     {
         count++;
@@ -40,7 +35,6 @@ int main(void)
                 usedNums[num] = 1;
             }
         }
-
         if (loShuTest(randLoShu) == true)
         {
             printf("Lo Shu square generated on square: %d \nLo Shu square contense: \n", count);
@@ -50,7 +44,6 @@ int main(void)
     }
     return 0;
 }
-
 bool loShuTest(int twoDarr[][col])
 {
     // check sum of rows
@@ -66,7 +59,6 @@ bool loShuTest(int twoDarr[][col])
         if (rowSum != 15)
             return false;
     }
-
     // check sum of column
     for (int i = 0; i < row; i++)
     {
@@ -80,7 +72,6 @@ bool loShuTest(int twoDarr[][col])
         if (colSum != 15)
             return false;
     }
-
     // check sum of diagonal upper left to bottom right
     int diagonalSumOne = 0;
     for (int i = 0; i < col; i++)
@@ -92,7 +83,6 @@ bool loShuTest(int twoDarr[][col])
     {
         return false;
     }
-
     // check sum of diagonal bottom left to upper right
     int diagonalSumTwo = 0;
     int j = row - 1;
@@ -106,16 +96,13 @@ bool loShuTest(int twoDarr[][col])
     }
     //printf("%d", diagonalSumTwo);
     return diagonalSumOne == diagonalSumTwo;
-
     // check for duplicates of nums 1-9
     int *duplicates;
     duplicates = &twoDarr[0][0];
-
     // for (int i = 0; i < 9; i++)
     // {
     //     printf("%d", duplicates[i]);
     // }
-
     for (int i = 0; i < 9; i++)
     {
         // printf("i = %d dup = %d \n", i, duplicates[i]);
@@ -132,10 +119,8 @@ bool loShuTest(int twoDarr[][col])
     // passes all checks
     return true;
 }
-
 void printLoShu(int twoDarr[row][col])
 {
-
     for (int i = 0; i < row; i++)
     {
         printf("[ ");

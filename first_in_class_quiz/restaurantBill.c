@@ -5,17 +5,14 @@ Then the program will then randomly select an option 1-4.
 I will then use a switch statement to choose the right food option.
 Finally, the program prints the total amount.
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-
 // function declaration for calcualtor 
 // handles all the calculations for the total amount 
 // given teh taxed amount plus tip amount
 float calculator(float tax, float tip, float food);
-
 int main()
 {
     // Variable declarations
@@ -29,24 +26,19 @@ int main()
     int switchCase = 0;
     // set time
     time_t t;
-
     // Init random number generator
     srand((unsigned)time(&t));
-
     // print input request and gather input
     printf("Tax Percent: ");
     scanf("%f", &tax);
-
     // convert percentage to dec repeat for tip
     tax = tax * 0.01;
     // printf("%f", tax);
     printf("Tip Percent: ");
     scanf("%f", &tip);
     tip = tip * 0.01;
-
     // set switchCase
     switchCase = rand() % 4;
-
     // call switch statement to 
     // corrilated randon number, print case, call calculator
     switch (switchCase)
@@ -70,10 +62,8 @@ int main()
     }
     // print total
     printf(" Total: %.2f", total);
-
     return 0;
 }
-
 float calculator(float tax, float tip, float food)
 {
     float total;
@@ -84,6 +74,5 @@ float calculator(float tax, float tip, float food)
     total = ceilf(total * 100) / 100;
     total = total + (total * tip);
     // printf("Total after Tip: %f", total);
-
     return total;
 }

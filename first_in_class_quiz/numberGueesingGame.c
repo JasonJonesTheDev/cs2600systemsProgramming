@@ -29,15 +29,11 @@ Then I clean up my array by using the free functino that sets it back to 0, and 
 I then realized I would need two game loops, one for the main gain and one for the guessing portion.
 Varilabes also dramatically increased over time and I ended up with 11 total.
 
-
-
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <time.h>
-
 // struct declaration with dynamic array and size variables to track array size.
 typedef struct
 {
@@ -45,7 +41,6 @@ typedef struct
     size_t used;
     size_t size;
 } Array;
-
 // init array dynamically allocates memory for the new array.
 void initArray(Array *a, size_t initialSize)
 {
@@ -53,7 +48,6 @@ void initArray(Array *a, size_t initialSize)
     a->used = 0;
     a->size = initialSize;
 }
-
 // insert will insert then check to see if array is in need of growing if so it will double.
 void insertArray(Array *a, int element)
 {
@@ -64,7 +58,6 @@ void insertArray(Array *a, int element)
     }
     a->array[a->used++] = element;
 }
-
 // freeArray will free up the memory then set the array to null and the size variables to 0.
 void freeArray(Array *a)
 {
@@ -72,13 +65,11 @@ void freeArray(Array *a)
     a->array = NULL;
     a->used = a->size = 0;
 }
-
 int main()
 {
     // The number we compare in the game.
     int computerNum = 0;
     int playerNum = 0;
-
     // file inpout
     FILE *fptr;
     fptr = fopen("save_user_max_number", "w");
@@ -87,7 +78,6 @@ int main()
         printf("Error!");
         exit(1);
     }
-
     // array initializations.
     Array winLoss;
     initArray(&winLoss, 5);
@@ -96,19 +86,15 @@ int main()
     // game loop bools.
     int gameCount = 0;
     bool gameRun = true;
-
     // set time.
     time_t t;
-
     // Initialize random number generator.
     srand((unsigned)time(&t));
-
     // welcome message
     printf("Welcome to NUMBERIZOR 3000!\n\nTest your guessing skills...\n"
            "Do you think you can guess what I am thinking?\nYou think you can read my mind?\n"
            "We will see...\n\n\nPress any key to continue\n\n\n");
     getchar();
-
     // declare and initialize the menu selection and the default starting max of 10.
     int menuSelection = 0;
     int computerNumMax = 10;
@@ -120,23 +106,18 @@ int main()
         printf("Press 1 to play a game\n"
                "Press 2 to change the max number\n"
                "Press 3 to quit\n");
-
         // take user selection.
         scanf("%d", &menuSelection);
-
         // guess game run loop true.
         bool guessRun = true;
-
         // switch statement for the main menu selection.
         switch (menuSelection)
         {
         case 1:
             // count games for print function.
             gameCount++;
-
             // set the computers number.
             computerNum = rand() % computerNumMax + 1;
-
             // guess loop
             while (guessRun)
             {
@@ -202,7 +183,6 @@ int main()
             freeArray(&winLoss);
             freeArray(&numberOfGuessesPerGame);
             gameRun = false;
-
         default:
             break;
         }
